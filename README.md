@@ -50,9 +50,9 @@ pip install flask requests python-dotenv
  
 `app.py` has three main functions:
  
-- **`fetch_data(endpoint)`** — makes a GET request to the Comdaily API and returns the data under the `message` key
-- **`compare_historical_to_latest(income_data)`** — looks at the oldest and newest year in the data and returns arrows (↑ or ↓) to show the direction of change
-- **`build_chart_data(income_data)`** — formats the income data into arrays that Chart.js can use directly; revenue and net income are converted to billions so the chart numbers are readable
+- **`fetch_data(endpoint)`** : makes a GET request to the Comdaily API and returns the data under the `message` key
+- **`compare_historical_to_latest(income_data)`** : looks at the oldest and newest year in the data and returns arrows (↑ or ↓) to show the direction of change
+- **`build_chart_data(income_data)`** : formats the income data into arrays that Chart.js can use directly; revenue and net income are converted to billions so the chart numbers are readable
  
 The Flask route at `/` calls all three, then passes the results to `index.html` via `render_template`.
  
