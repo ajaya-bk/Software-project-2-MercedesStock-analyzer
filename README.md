@@ -25,7 +25,7 @@ MBG.de/
 ├── mercedes/
 │   ├── app.py          # main Flask app, fetches data and passes it to the template
 │   ├── config.py       # API URL, auth credentials, and stock symbol
-│   ├── .env            # your API credentials (not committed to git)
+│   ├── .env            # API credentials (not committed to git)
 │   └── templates/
 │       └── index.html  # the frontend template with Chart.js charts
 │
